@@ -78,6 +78,8 @@ Each snapshot contains:
 - **v**: The velocities of all particles in 3D.
 - **m**: The mass of each particle.
 
+![](./doc/snapshot.png)
+
 By default, the program is set to generate an output similar to:
 
 ![](./doc/plot.gif)
