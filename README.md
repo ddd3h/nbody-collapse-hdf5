@@ -1,9 +1,11 @@
-# HDF5-based Simulation Data Storage
+# N-body simulation with HDF5 Storage
 
 ## Overview
 This project provides a C++ implementation for storing simulation snapshots in HDF5 format. The `Makefile` is designed to automatically detect whether the environment is Linux or macOS and compile the project accordingly. The generated HDF5 file organizes snapshots hierarchically for structured data management.
 
 ## What is HDF5?
+
+![](./doc/hdf5-logo.png)
 
 HDF5 (Hierarchical Data Format version 5) is a data model, library, and file format for storing and managing large amounts of scientific and engineering data. It allows for hierarchical organization, metadata storage, and high-performance I/O operations, making it ideal for numerical simulations and large-scale data processing.
 
@@ -24,7 +26,10 @@ For **Windows (vcpkg)**:
 vcpkg install hdf5
 ```
 
+If you need the latest version of HDF5 or do not have admin (sudo) privileges, you can install the HDF5 package from the following link: [HDF5 Official Downloads](https://www.hdfgroup.org/download-hdf5/source-code/)
+
 ## Compiling
+
 To compile the project, simply run:
 ```sh
 make
@@ -72,6 +77,10 @@ Each snapshot contains:
 - **x**: The positions of all particles in 3D.
 - **v**: The velocities of all particles in 3D.
 - **m**: The mass of each particle.
+
+By default, the program is set to generate an output similar to:
+
+![](./doc/plot.gif)
 
 ## Author
 Daisuke NISHIHAMA (ddd3h)
