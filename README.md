@@ -50,7 +50,7 @@ The parameters for the simulation are stored in `param.txt`. The order of the pa
 ## HDF5 File Structure
 The output HDF5 file is structured as follows:
 ```
-snapshots.h5
+snapshots.hdf5
 ├── snapshot_001
 │   ├── t  (double)    # Time
 │   ├── x  (double[n][3])  # Position array
