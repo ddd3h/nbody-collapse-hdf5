@@ -15,6 +15,15 @@ using namespace H5;
 #define NMAX 16384
 #define SQR(x) ((x)*(x))
 
+#define WSIZE 6.0 /* size of window in inch */
+#define VMAX 1.25 /* limit of variables in window */
+#define XPLOT 0   /* coordinate for x */
+#define YPLOT 1   /* coordinate for y */
+#define TX  0.9   /* x coordinate of time */
+#define TY -1.1   /* y coordinate of time */
+#define CFG 5     /* foreground color */
+#define CBG 0     /* background color */
+
 void set_caculation_parameters(int *n, double *eps2, double *dt, double *t_end, double *t_out, double *r_v);
 void set_from_param_txt(int *n, double *eps2, double *dt, double *t_end, double *t_out, double *r_v);
 double gaussian(void);
